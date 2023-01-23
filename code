@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace jun1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string password = "12345";
+            string passwordCheck;
+            string secretMessage = "курс топ";
+            int tryCount = 3;
+
+            Console.WriteLine("Введите пароль");
+            
+            for (int tryNumber = tryCount - 1; tryNumber >= 0; tryNumber--)
+            {
+                passwordCheck = Console.ReadLine();
+
+                if (passwordCheck == password)
+                {
+                    Console.WriteLine(secretMessage); 
+                    break;
+                }
+                else 
+
+                Console.WriteLine("Попыток осталось " + tryNumber);
+            }
+
+        }
+    }
+}
