@@ -27,9 +27,10 @@ namespace jun1
                     Console.WriteLine(secretMessage); 
                     break;
                 }
-                else 
-
-                Console.WriteLine("Попыток осталось " + tryNumber);
+                else
+                {
+                    Console.WriteLine("Попыток осталось " + tryNumber);
+                }      
             }
 
         }
